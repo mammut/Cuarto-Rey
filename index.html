@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta charset="utf-8">
+		<title>Cuarto Rey</title>
+		
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+		<link rel="stylesheet" href="style.css" type="text/css" media="screen" title="Main Style" charset="utf-8">
+	</head>
+	
+	<body onload="setTimeout(function() { window.scrollTo(0, 1) }, 100);">
+
+		<div id="container">
+			<div id="game">
+				<div id="config">
+					<div class="inner">
+						<h3>Configuración</h3>
+						<ul id="valores">
+							<li><span>As</span><input type="text" id="as"></li>
+							<li><span>2</span><input type="text" id="dos"></li>
+							<li><span>3</span><input type="text" id="tres"></li>
+							<li><span>4</span><input type="text" id="cuatro"></li>
+							<li><span>5</span><input type="text" id="cinco"></li>
+							<li><span>6</span><input type="text" id="seis"></li>
+							<li><span>7</span><input type="text" id="siete"></li>
+							<li><span>8</span><input type="text" id="ocho"></li>
+							<li><span>9</span><input type="text" id="nueve"></li>
+							<li><span>10</span><input type="text" id="diez"></li>
+							<li><span>J</span><input type="text" id="jota"></li>
+							<li><span>Q</span><input type="text" id="quina"></li>
+							<li><span>K</span><input type="text" id="kaiser"></li>
+						</ul>
+					
+						<input type="submit" value="Guardar" id="save-config"/>
+					</div><!-- End inner -->
+				</div><!-- End config -->
+				
+				<div id="main-game">
+					<h2>Cuarto Rey</h2>
+				
+					<ul id="juego">
+						<li>Iniciar...</li>
+					</ul>
+				
+					<div id="sacar-carta">Sacar Carta</div>
+					<div id="count-keep">Van: 0 - Quedan: 52</div>
+
+					<img src="images/config.png" alt="Config" id="config-button">
+				</div><!-- End main-game -->
+			</div><!-- End game -->
+		</div><!-- End container -->
+		
+		<script src="js/jquery-1.7.1.min.js" type="text/javascript"></script>
+		<script src="js/jquery.cookie.js"></script>
+		<script src="js/scripts.js"></script>
+	</body>
+</html>
