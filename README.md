@@ -60,7 +60,7 @@ El juego viene cargado con significados por defecto:
 
 - **Kaiser: *Shot*** (El jugador agrega al vaso central 1/4 del total de este. El que saca el último Kaiser agrega su porción y luego debe tomar el vaso completo como un shot)
 
-Toos estos son ejemplos. Pueden inventarse mas y guardarlos a gustos en la configuración del juego. (mas ejemplos: [cuarto rey])
+Todos estos son ejemplos. Pueden inventarse mas y guardarlos a gustos en la configuración del juego. (mas ejemplos: [cuarto rey])
 
 [Cuarto Rey]: http://www.juegosparatomar.com/2008/12/combinado.html
 
