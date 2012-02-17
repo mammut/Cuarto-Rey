@@ -1,88 +1,57 @@
 <!DOCTYPE html>
-<html>
-<head>
-  <meta charset='utf-8'>
+<html lang="es">
+	<head>
+		<meta charset="utf-8">
+		<title>Cuarto Rey</title>
+		
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+		<link rel="stylesheet" href="style.css" type="text/css" media="screen" title="Main Style" charset="utf-8">
+	</head>
+	
+	<body onload="setTimeout(function() { window.scrollTo(0, 1) }, 100);">
 
-  <title>mammut/Cuarto-Rey @ GitHub</title>
+		<div id="container">
+			<div id="game">
+				<div id="config">
+					<div class="inner">
+						<h3>Configuración</h3>
+						<ul id="valores">
+							<li><span>As</span><input type="text" id="as"></li>
+							<li><span>2</span><input type="text" id="dos"></li>
+							<li><span>3</span><input type="text" id="tres"></li>
+							<li><span>4</span><input type="text" id="cuatro"></li>
+							<li><span>5</span><input type="text" id="cinco"></li>
+							<li><span>6</span><input type="text" id="seis"></li>
+							<li><span>7</span><input type="text" id="siete"></li>
+							<li><span>8</span><input type="text" id="ocho"></li>
+							<li><span>9</span><input type="text" id="nueve"></li>
+							<li><span>10</span><input type="text" id="diez"></li>
+							<li><span>J</span><input type="text" id="jota"></li>
+							<li><span>Q</span><input type="text" id="quina"></li>
+							<li><span>K</span><input type="text" id="kaiser"></li>
+						</ul>
+					
+						<input type="submit" value="Guardar" id="save-config"/>
+					</div><!-- End inner -->
+				</div><!-- End config -->
+				
+				<div id="main-game">
+					<h2>Cuarto Rey</h2>
+				
+					<ul id="juego">
+						<li>Iniciar...</li>
+					</ul>
+				
+					<div id="sacar-carta">Sacar Carta</div>
+					<div id="count-keep">Van: 0 - Quedan: 52</div>
 
-  <style type="text/css">
-    body {
-      margin-top: 1.0em;
-      background-color: #3bc020;
-      font-family: Helvetica, Arial, FreeSans, san-serif;
-      color: #ffffff;
-    }
-    #container {
-      margin: 0 auto;
-      width: 700px;
-    }
-    h1 { font-size: 3.8em; color: #c43fdf; margin-bottom: 3px; }
-    h1 .small { font-size: 0.4em; }
-    h1 a { text-decoration: none }
-    h2 { font-size: 1.5em; color: #c43fdf; }
-    h3 { text-align: center; color: #c43fdf; }
-    a { color: #c43fdf; }
-    .description { font-size: 1.2em; margin-bottom: 30px; margin-top: 30px; font-style: italic;}
-    .download { float: right; }
-    pre { background: #000; color: #fff; padding: 15px;}
-    hr { border: 0; width: 80%; border-bottom: 1px solid #aaa}
-    .footer { text-align:center; padding-top:30px; font-style: italic; }
-  </style>
-</head>
-
-<body>
-  <a href="https://github.com/mammut/Cuarto-Rey"><img style="position: absolute; top: 0; right: 0; border: 0;" src="http://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png" alt="Fork me on GitHub" /></a>
-
-  <div id="container">
-
-    <div class="download">
-      <a href="https://github.com/mammut/Cuarto-Rey/zipball/master">
-        <img border="0" width="90" src="https://github.com/images/modules/download/zip.png"></a>
-      <a href="https://github.com/mammut/Cuarto-Rey/tarball/master">
-        <img border="0" width="90" src="https://github.com/images/modules/download/tar.png"></a>
-    </div>
-
-    <h1><a href="https://github.com/mammut/Cuarto-Rey">Cuarto-Rey</a>
-      <span class="small">by <a href="https://github.com/mammut">mammut</a></span></h1>
-
-    <div class="description">
-      Drinking Game on Javascript
-    </div>
-
-    
-
-    
-
-    
-
-    
-
-    
-      <h2>Authors</h2>
-      <p>Juan Pablo Escalona G (irken.cs@gmail.com)<br/>      </p>
-    
-
-    
-      <h2>Contact</h2>
-      <p>Juan Pablo Escalona G. (irken.cs@gmail.com)<br/>      </p>
-    
-
-    <h2>Download</h2>
-    <p>
-      You can download this project in either
-      <a href="https://github.com/mammut/Cuarto-Rey/zipball/master">zip</a> or
-      <a href="https://github.com/mammut/Cuarto-Rey/tarball/master">tar formats.
-    </p>
-    <p>You can also clone the project with <a href="http://git-scm.com">Git</a>
-      by running:
-      <pre>$ git clone git://github.com/mammut/Cuarto-Rey</pre>
-    </p>
-
-    <div class="footer">
-      get the source code on GitHub : <a href="https://github.com/mammut/Cuarto-Rey">mammut/Cuarto-Rey</a>
-    </div>
-
-  </div>
-
-</body>
+					<img src="images/config.png" alt="Config" id="config-button">
+				</div><!-- End main-game -->
+			</div><!-- End game -->
+		</div><!-- End container -->
+		
+		<script src="js/jquery-1.7.1.min.js" type="text/javascript"></script>
+		<script src="js/jquery.cookie.js"></script>
+		<script src="js/scripts.js"></script>
+	</body>
 </html>
