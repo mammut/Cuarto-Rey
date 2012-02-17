@@ -17,10 +17,10 @@ El Juego
 
 1. Requisitos
 ------------
-- 1 Mazo de cartas (sin Joker)
-- Alcohol
-- Vasos para cada jugador
-- Un vaso vacío en el centro
+ - 1 Mazo de cartas (sin Joker)
+ - Alcohol
+ - Vasos para cada jugador
+ - Un vaso vacío en el centro
 
 2. Instrucciones
 ----------------
