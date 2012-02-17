@@ -14,7 +14,7 @@ fill_rules = function(reglas) {
 
 /* Generar Mazo */
 var cartas = ['as', 'dos', 'tres', 'cuatro', 'cinco', 'seis', 'siete', 'ocho', 'nueve', 'diez', 'jota', 'quina', 'kaiser'];
-var reglas = ['Regla', 'Toma 2', 'Tome 3', 'Toma 4', 'Da 2', 'Da 3', 'Da 4', 'Da 5', 'Pulgar', 'Cascada', 'Cultura', 'Historia', 'Shot'];
+var reglas = ['Regla', 'Toma 2', 'Tome 3', 'Toma 4', 'Da 2', 'Da 3', 'Da 4', 'Historia', 'Pulgar', 'Cascada', 'Cultura', 'Rima', 'Shot'];
 var icons = ['As', '2', '3', '4', '5', '6', '7', '8', '9', '10', 'J', 'Q', 'K'];
 var mazo = new Array();
 
