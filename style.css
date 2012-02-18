@@ -216,11 +216,11 @@ h2 {
 	font-family: Copperplate / Copperplate Gothic Light, sans-serif;
 }
 
-#historial-button{
+#historial-button {
 	position: absolute;
 	left: 288px;
 	top: 2px;
-	z-index: 2;
+	z-index: 999999;
 }
 
 #historial h3 {
