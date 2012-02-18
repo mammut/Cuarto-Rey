@@ -9,9 +9,18 @@
 	</head>
 	
 	<body onload="setTimeout(function() { window.scrollTo(0, 1) }, 100);">
-
+		
+		<div id="historial">
+			<h3>Historial</h3>
+			<ol id="jugadas">
+			</ol>
+			<img src="images/separator.jpg" alt="separator" />
+		</div>
+		
 		<div id="container">
-			<div id="game">
+			
+			<div id="game">		
+				<img src="images/history.png" alt="history" id="historial-button" />		
 				<div id="config">
 					<div class="inner">
 						<h3>Configuración</h3>
@@ -32,21 +41,24 @@
 						</ul>
 					
 						<input type="submit" value="Guardar" id="save-config"/>
+						<div id="reset-config">Valores por defecto</div>
 					</div><!-- End inner -->
 				</div><!-- End config -->
 				
 				<div id="main-game">
-					<h2>Cuarto Rey</h2>
 				
+					<h2>Cuarto Rey</h2>
+			
 					<ul id="juego">
 						<li>Iniciar...</li>
 					</ul>
-				
+			
 					<div id="sacar-carta">Sacar Carta</div>
 					<div id="count-keep">Van: 0 - Quedan: 52</div>
 
-					<img src="images/config.png" alt="Config" id="config-button">
-				</div><!-- End main-game -->
+					<img src="images/config.png" alt="Config" id="config-button" />
+					
+				</div><!-- End main-game -->				
 			</div><!-- End game -->
 		</div><!-- End container -->
 		
@@ -54,4 +66,4 @@
 		<script src="js/jquery.cookie.js"></script>
 		<script src="js/scripts.js"></script>
 	</body>
-</html><!--eso-->
+</html>
