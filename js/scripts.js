@@ -12,22 +12,27 @@ fill_rules = function(reglas) {
 	}
 };
 
+generar_mazo = function() {
+	var mazo = new Array();
+	
+	for (var i = 0; i < 4; i++)
+		for(var carta in cartas)
+			mazo.push(cartas[carta]+'-<img src="images/'+i+'.png" alt="pinta" />');
+			
+	total = mazo.length;
+	return shuffle(mazo);
+};
+
 /* Generar Mazo */
 var cartas = ['as', 'dos', 'tres', 'cuatro', 'cinco', 'seis', 'siete', 'ocho', 'nueve', 'diez', 'jota', 'quina', 'kaiser'];
 var reglas = ['Regla', 'Toma 2', 'Toma 3', 'Toma 4', 'Da 2', 'Da 3', 'Da 4', 'Historia', 'Pulgar', 'Cascada', 'Cultura', 'Rima', 'Shot'];
 var icons = ['As', '2', '3', '4', '5', '6', '7', '8', '9', '10', 'J', 'Q', 'K'];
-var mazo = new Array();
-
-for (var i = 0; i < 4; i++)
-	for(var carta in cartas)
-		mazo.push(cartas[carta]);
-
-mazo = shuffle(mazo);
-var total = mazo.length;
-var mouse_is_inside = false;
+var mazo = null;
+var total = 0;
 
 $(function() {
 	fill_rules(reglas);
+	mazo = generar_mazo();
 	
 	$('#config-button').click(function() {
 		$('#config').animate({width: 'toggle'});
@@ -37,8 +42,12 @@ $(function() {
 	
 	$('#sacar-carta').click(function() {
 		if(mazo.length > 0) {
-			var tmp = mazo.pop();
-			$('#juego li').html(icons[cartas.indexOf(tmp)]+': ' + $('#'+tmp).val());
+			var tmp = mazo.pop().split('-');
+			var cardNumb = tmp[0];
+			var image    = tmp[1];
+			
+			$('#juego li').html(icons[cartas.indexOf(cardNumb)] + image +' : ' + $('#'+cardNumb).val());
+			$('#jugadas').append('<li>'+icons[cartas.indexOf(cardNumb)]+ image + ' : ' + $('#'+cardNumb).val())+'</li>';
 		}else {
 			$('#juego li').html('fin');
 		}
@@ -57,5 +66,13 @@ $(function() {
 		$.cookie('cuartorey', saveus.join('-'), { expires: 30 });
 		$('#config').animate({width: 'toggle'});
 		return 0;
+	});
+	
+	$('#reset-config').click(function() {
+		
+	});
+	
+	$('#historial-button').click(function() {
+		$('#historial').animate({height: 'toggle'});
 	});
 });
