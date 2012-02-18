@@ -65,11 +65,14 @@ $(function() {
 		}
 		$.cookie('cuartorey', saveus.join('-'), { expires: 30 });
 		$('#config').animate({width: 'toggle'});
-		return 0;
+		return false;
 	});
 	
 	$('#reset-config').click(function() {
-		
+		$.cookie('cuartorey', null);
+		fill_rules(reglas);
+		$('#config').animate({width: 'toggle'});
+		return false;
 	});
 	
 	$('#historial-button').click(function() {
