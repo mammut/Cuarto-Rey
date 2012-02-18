@@ -39,7 +39,6 @@ h2 {
 	
 }
 
-
 /* Main Game */
 #main-game {
 	position: relative;
@@ -172,6 +171,10 @@ h2 {
 
 }
 
+#config h3 {
+	margin: 5px 0 0 10px;
+}
+
 #config ul {
 	list-style: none;
 	padding: 0;
@@ -186,10 +189,55 @@ h2 {
 	display: inline-block;
 }
 
+#reset-config {
+	margin-top: 10px;
+	background: red;
+	border-top: 1px solid #444;
+	border-bottom: 1px solid #444;
+	cursor: pointer;
+	color: white;
+	padding: 2px 0;
+	font-size: 10px;
+}
+
 #config input[type=submit] { margin-bottom: 10px; }
 
 .inner {
 	margin: 0 auto;
 	overflow: auto;
 	width: 220px;
+}
+
+/* History of plays */
+#historial {
+	margin: 0 auto;
+	width: 320px;
+	display: none;
+	font-family: Copperplate / Copperplate Gothic Light, sans-serif;
+}
+
+#historial-button{
+	position: absolute;
+	left: 288px;
+	top: 2px;
+	z-index: 2;
+}
+
+#historial h3 {
+	margin: 5px 0 5px 45px;
+}
+
+#jugadas li {
+    border: 1px solid green;
+    background: yellowgreen;
+    padding: 2px 9px;
+    border-radius: 6px;
+    width: 240px;
+    margin: 5px auto;
+}
+
+#jugadas {
+    list-style-type: none;
+    padding: 0;
+	text-align: left;
 }
