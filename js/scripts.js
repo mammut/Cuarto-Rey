@@ -31,6 +31,7 @@ var mazo = null;
 var total = 0;
 
 $(function() {
+	$.preloadImages('images/0.png', 'images/1.png', 'images/2.png', 'images/3.png', 'images/config.png', 'images/history.png', 'images/separator.jpg', 'images/background.png');
 	fill_rules(reglas);
 	mazo = generar_mazo();
 	
